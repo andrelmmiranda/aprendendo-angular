@@ -1,0 +1,21 @@
+<h1>Lifecycle hooks</h1>
+<p>A component instance has a lifecycle that starts when Angular instantiates the component class and renders the component view along with its child views. The lifecycle continues with change detection, as Angular checks to see when data-bound properties change, and updates both the view and the component instance as needed. The lifecycle ends when Angular destroys the component instance and removes its rendered template from the DOM. Directives have a similar lifecycle, as Angular creates, updates, and destroys instances in the course of execution.</p>
+
+<p>Your application can use lifecycle hook methods to tap into key events in the lifecycle of a component or directive to initialize new instances, initiate change detection when needed, respond to updates during change detection, and clean up before deletion of instances.</p>
+
+<hr>
+
+<h2>Prerequisites</h2>
+<p>Before working with lifecycle hooks, you should have a basic understanding of the following:</p>
+
+<ul>
+    <li>TypeScript programming.</li>
+    <li>Angular app-design fundamentals, as described in Angular Concepts.</li>
+</ul>
+
+<hr>
+
+<h2>Responding to lifecycle events</h2>
+<p>Respond to events in the lifecycle of a component or directive by implementing one or more of the lifecycle hook interfaces in the Angular core library. The hooks give you the opportunity to act on a component or directive instance at the appropriate moment, as Angular creates, updates, or destroys that instance.</p>
+
+<p>Each interface defines the prototype for a single hook method, whose name is the interface name prefixed with ng. For example, the OnInit interface has a hook method named ngOnInit(). If you implement this method in your component or directive class, Angular calls it shortly after checking the input properties for that component or directive for the first time.</p>

@@ -1,0 +1,44 @@
+<h1>Angular Components Overview</h1>
+<p>Components are the main building block for Angular applications. Each component consists of:</p>
+<ul>
+    <li *ngFor="let item of firstList">{{item.item}}</li>
+</ul>
+<p>This topic describes how to create and configure an Angular component.</p>
+<div class="helpfull">
+    <p>To view or download the example code used in this topic, see the live example / download example.</p>
+</div>
+
+<hr>
+
+<h2>Prerequisites</h2>
+<p>To create a component, verify that you have met the following prerequisites:</p>
+
+<ol>
+    <li *ngFor="let item of secondList">{{item.item}}</li>
+</ol>
+
+<h2>Creating a component</h2>
+<p>The best way to create a component is with the Angular CLI. You can also create a component manually.</p>
+
+<h3>Creating a component using the Angular CLI</h3>
+<p>To create a component using the Angular CLI:</p>
+
+<ol>
+    <li>From a terminal window, navigate to the directory containing your application.</li>
+    <li>Run the ng generate component  &lt;component-name&gt; command, where &lt;component-name&gt; is the name of your new component.</li>
+</ol>
+
+<p>By default, this command creates the following:</p>
+<ul>
+    <li>A folder named after the component</li>
+    <li>A component file, &lt;component-name&gt;.component.ts</li>
+    <li>A template file, &lt;component-name&gt;.component.html</li>
+    <li>A CSS file, &lt;component-name&gt;.component.css</li>
+    <li>A testing specification file, &lt;component-name&gt;.component.spec.ts</li>
+</ul>
+
+<p>Where &lt;component-name&gt; is the name of your component.</p>
+
+<div class="helpfull">
+    <p>You can change how ng generate component creates new components. For more information, see ng generate component in the Angular CLI documentation.</p>
+</div>
